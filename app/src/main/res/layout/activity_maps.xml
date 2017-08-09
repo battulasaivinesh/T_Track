@@ -1,0 +1,310 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.itshareplus.googlemapdemo.MapsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/map_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_grey"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvDistance"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="0 km"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--map:layout_constraintBottom_toBottomOf="parent"-->
+            <!--map:layout_constraintTop_toTopOf="parent"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--map:layout_constraintVertical_bias="1.0"-->
+            <!--android:layout_marginStart="11dp"-->
+            <!--map:layout_constraintLeft_toRightOf="@+id/imageView"-->
+            <!--android:layout_marginLeft="11dp" />-->
+
+        <!--<TextView-->
+            <!--android:textColor="@color/white"-->
+            <!--android:id="@+id/tvDuration"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="0 min"-->
+            <!--android:textSize="20sp"-->
+            <!--map:layout_constraintBottom_toBottomOf="parent"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--map:layout_constraintTop_toTopOf="parent"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--map:layout_constraintVertical_bias="1.0"-->
+            <!--map:layout_constraintLeft_toRightOf="@+id/imageView2"-->
+            <!--android:layout_marginLeft="9dp"-->
+            <!--android:layout_marginStart="9dp" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@mipmap/clock_icon"-->
+            <!--map:layout_constraintTop_toTopOf="parent"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--map:layout_constraintBottom_toBottomOf="parent"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--map:layout_constraintLeft_toLeftOf="parent" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:src="@mipmap/distance_icon"-->
+            <!--android:layout_marginStart="9dp"-->
+            <!--map:layout_constraintLeft_toRightOf="@+id/tvDuration"-->
+            <!--android:layout_marginLeft="9dp"-->
+            <!--map:layout_constraintTop_toTopOf="parent"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--map:layout_constraintBottom_toBottomOf="parent"-->
+            <!--android:layout_marginBottom="8dp" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="359dp"
+            android:layout_height="380dp"
+            map:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"
+
+            map:layout_constraintLeft_toLeftOf="parent"
+
+            map:layout_constraintRight_toRightOf="parent"
+            map:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="0dp" />
+
+
+        <ImageButton
+            android:id="@+id/truck_center"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:onClick="center_truck"
+            android:src="@mipmap/truck_center_icon"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            map:layout_constraintRight_toRightOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            map:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            map:layout_constraintLeft_toLeftOf="parent"
+            map:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/linearLayout6"
+            map:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ignition"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Ignition ON" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/fuel"
+                    android:layout_weight="1"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="60%" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@mipmap/numplate"
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="GHEB12345" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="8dp"
+            map:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="8dp"
+            map:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            android:layout_marginLeft="8dp"
+            map:layout_constraintLeft_toLeftOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/speed2"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="43dp" />
+
+                <TextView
+                    android:id="@+id/truck_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="25 Km/Hr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/latlng"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="19.736,73.198" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/fullbat"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="97%" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

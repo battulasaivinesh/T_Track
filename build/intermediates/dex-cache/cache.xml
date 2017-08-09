@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Vinesh/Desktop/Truck Application/GoogleMapDirectionSimple-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c2625f7616c4e0607f684d40187098f32773147">
+        <dex dex="/Users/Vinesh/Desktop/Truck Application/GoogleMapDirectionSimple-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_27be52172c29aa81d4120a9a489da7d7b71588b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Vinesh/Desktop/Truck Application/GoogleMapDirectionSimple-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/Vinesh/Desktop/Truck Application/GoogleMapDirectionSimple-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7df1ec67223966f8216f998f0204b6131dfd69ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Vinesh/.android/build-cache/f2b8a41f94791db3aca6e45a9e0faea7b5b43dc7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e84b30031d4bab89a2b5c45af4eb9213828524dd">
+        <dex dex="/Users/Vinesh/Desktop/Truck Application/GoogleMapDirectionSimple-master/app/build/intermediates/pre-dexed/release/classes_026e05319c71c5fb47d244396ad8390bad908dda.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Vinesh/.android/build-cache/f2b8a41f94791db3aca6e45a9e0faea7b5b43dc7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e84b30031d4bab89a2b5c45af4eb9213828524dd">
+        <dex dex="/Users/Vinesh/Desktop/Truck Application/GoogleMapDirectionSimple-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_026e05319c71c5fb47d244396ad8390bad908dda/classes.dex" />
+    </item>
+
+</items>

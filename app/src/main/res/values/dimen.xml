@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="clock_size">25dp</dimen>
+    <dimen name="truck_padding">5dp</dimen>
+    <dimen name="delete_icon_size">40dp</dimen>
+</resources>

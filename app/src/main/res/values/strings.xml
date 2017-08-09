@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">T Track</string>
+    <string name="title_activity_maps">T Track</string>
+    <string name="Truck_main_label">Trucks</string>
+    <string name="add_trucks">Add</string>
+    <string name="truck_source">Origin</string>
+    <string name="enter_text">Enter text</string>
+    <string name="truck_destination">Destination</string>
+    <string name="submit_truck">Submit</string>
+    <string name="gas_station">Gas</string>
+    <string name="truck_name_label">Truck Name</string>
+    <string name="driver_name_label">Driver Name</string>
+    <string name="driver_number_label">Contact</string>
+    <string name="name_driver_lablel">Name</string>
+    <string name="button_all_trucks">View All</string>
+    <string name="title_activity_view_all">ViewAll</string>
+    <string name="swipe_up_text">Select Truck</string>'
+    <string name="action_favorite">action</string>
+    <string name="action_settings">set</string>
+    <string name="driver_icon_info">Contact</string>
+    <string name="gas_icon_info">Gas</string>
+</resources>

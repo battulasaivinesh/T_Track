@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toll_road"
+        android:title="Toll"
+        android:icon="@drawable/toll_icon"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/gas_button"
+        android:icon="@drawable/gas_icon"
+        android:title="@string/gas_icon_info"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/driver_info"
+        android:icon="@drawable/driver_icon"
+        android:title="@string/driver_icon_info"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/tracking_history"
+        android:title="Tracking History"
+        app:showAsAction="never"
+        />
+</menu>
